@@ -7,6 +7,14 @@ import ambienceMain from "../assets/ambience-main.jpg";
 import ambienceDetail from "../assets/ambience-detail.jpg";
 import ambienceBar from "../assets/ambience-bar.jpg";
 
+type MenuItem = {
+  name: string;
+  price: string;
+  desc: string;
+  badge?: string;
+};
+
+
 export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
