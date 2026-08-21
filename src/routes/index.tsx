@@ -71,7 +71,8 @@ function ScrollReveal({
   );
 }
 
-const menuData: Record<string, MenuItem[]> = {
+const menuCategories = ["Small Plates", "Mains", "Botanicals", "Desserts"] as const;
+const menuData: Record<(typeof menuCategories)[number], MenuItem[]> = {
   "Small Plates": [
     {
       name: "Charred Heirloom Carrots",
