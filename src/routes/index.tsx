@@ -71,7 +71,7 @@ function ScrollReveal({
   );
 }
 
-const menuData = {
+const menuData: Record<string, MenuItem[]> = {
   "Small Plates": [
     {
       name: "Charred Heirloom Carrots",
