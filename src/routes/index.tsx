@@ -256,7 +256,7 @@ function Index() {
               <h2 className="font-display text-4xl md:text-5xl">Current Curations</h2>
             </div>
             <div className="flex flex-wrap gap-3 font-mono text-[11px] uppercase tracking-tighter">
-              {(Object.keys(menuData) as (keyof typeof menuData)[]).map((cat) => (
+              {menuCategories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
