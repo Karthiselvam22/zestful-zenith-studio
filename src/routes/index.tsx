@@ -153,7 +153,7 @@ const beverages = [
 ];
 
 function Index() {
-  const [activeCategory, setActiveCategory] = useState<keyof typeof menuData>("Small Plates");
+  const [activeCategory, setActiveCategory] = useState<(typeof menuCategories)[number]>("Small Plates");
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/20">
